@@ -1,0 +1,46 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+//@import "../../styles/base";
+
+.portfolio {
+	background-color: $lightGrey;
+
+	@include mediaLg {
+		height: auto;
+	}
+	@include mediaMd {
+		height: auto;
+	}
+	&__heading {
+		background-color: $grey;
+		@include mediaMd {
+			font-size: 26px;
+		}
+
+		@include mediaSm {
+			font-size: 22px;
+		}
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 16px;
+		padding: 1rem 0;
+		padding: 16px;
+		grid-auto-flow: row;
+		justify-items: center;
+
+		@include mediaLg {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include mediaMd {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include mediaSm {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
