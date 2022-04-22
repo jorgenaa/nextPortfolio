@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 html  {
     background-color: #f3f3f3;
     scrollbar-color: #3CFFFE #19274d;
