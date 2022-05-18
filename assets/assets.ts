@@ -7,7 +7,7 @@ export const assets = [
 		title: 'Food ordering site',
 		icon: 'assets/icons/GitHub.png',
 		img: CodeImg,
-		github: 'https://github.com/jorgenaa/next-mongodb-food-ordering',
+		github: '',
 		website: 'https://nextmongodbfoodordering.vercel.app/',
 	},
 	{	
