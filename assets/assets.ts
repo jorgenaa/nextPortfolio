@@ -7,7 +7,7 @@ export const assets = [
 		title: 'Eccomerce website',
 		icon: 'assets/icons/GitHub.png',
 		img: CodeImg,
-		github: '',
+		github: 'https://github.com/jorgenaa/next-mongodb-food-ordering',
 		website: 'https://tilbehoret.no/'
 	},
 	{	
@@ -33,6 +33,7 @@ export const assets = [
 	},
 	{
 		title: 'Covid App',
+		icon: '',
 		img: CodeImg,
 		github: 'https://github.com/jorgenaa/Covid-19-app',
 		website: 'https://jorgenaa.github.io/Covid-19-app/',
