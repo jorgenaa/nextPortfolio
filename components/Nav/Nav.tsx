@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import { Link as ScrollLink } from 'react-scroll';
 import Link from 'next/link'
 import { FaEnvelope } from 'react-icons/fa'
@@ -54,12 +55,9 @@ const Nav: React.FC = () => {
             </nav>
            
             <div className={s['nav__contact-info']}>
-                <Link href="mailto: jorgen.arnes@gmail.com">
-                    <a className={s['nav__contact-info__link']}>
+                <Link className={s['nav__contact-info__link']} href="mailto: jorgen.arnes@gmail.com">
                     <span className={s['nav__contact-info__icon']}><FaEnvelope style={{fontSize: "22px"}} /></span>
                     <span className={s['nav__contact-info__email']}>jorgen.arnes@gmail.com</span>
-                    </a>
-                   
                 </Link>
             </div>
           
