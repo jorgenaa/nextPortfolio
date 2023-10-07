@@ -8,7 +8,7 @@ import s from './Portfolio.module.scss'
 
 interface Assets {
 		title: string;
-		icon: string | any;
+		icon: string;
 		img: StaticImageData;
 		github: string;
 		website: string;
