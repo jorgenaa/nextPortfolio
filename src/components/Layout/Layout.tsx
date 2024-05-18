@@ -36,7 +36,7 @@ const Layout: FC <Props> = ({children, title, keywords, description}) => {
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             {/* <script src="https://js.stripe.com/v3" /> */}
         </Head>
-        <Header setToggleNavbar={setToggleNavbar} toggleNavbar={toggleNavbar} btnRef={btnRef} />
+        {/* <Header setToggleNavbar={setToggleNavbar} toggleNavbar={toggleNavbar} btnRef={btnRef} /> */}
         <main className={styles.wrapper}>
             {children}
         </main>

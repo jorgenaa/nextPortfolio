@@ -5,11 +5,18 @@ import Image from 'next/image'
 //Components
 import { Hero, About, Contact, Header, Layout, Portfolio, Skills } from '../components'
 import { Navbar } from '../components/Nav';
+import useAutoClose from '../Hooks/useAutoClose';
 
 const Home: NextPage = () => {
+  const [toggleNavbar, setToggleNavbar] = useState(false)
+    const [useClickOutside] = useAutoClose();
+
+    let btnRef = useClickOutside(() => {
+        setToggleNavbar(false)
+    })
   return (
    <Layout title={''} keywords={''} description={''}>
-      {/* <Header setToggleNavbar={setToggleNavbar} toggleNavbar={toggleNavbar} btnRef={btnRef} />  */}
+      <Header setToggleNavbar={setToggleNavbar} toggleNavbar={toggleNavbar} btnRef={btnRef} />
       <Hero />
       <About />
       <Skills  />
