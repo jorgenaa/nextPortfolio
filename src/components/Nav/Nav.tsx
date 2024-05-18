@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/link-passhref */
 import { Link as ScrollLink } from 'react-scroll';
 import Link from 'next/link'
 import { FaEnvelope } from 'react-icons/fa'

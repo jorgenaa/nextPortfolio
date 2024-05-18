@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/link-passhref */
 import Link from 'next/link'
 import { FaEnvelope } from 'react-icons/fa'
 import { GrLinkedin} from 'react-icons/gr'
