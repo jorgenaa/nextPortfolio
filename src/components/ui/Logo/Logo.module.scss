@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+//@import "../../../styles/base";
+
+.logo {
+    flex-basis: 80px;
+    //flex: 1;
+    margin: auto 0px auto 20px;
+    padding: 10px 0;
+    cursor: pointer;
+    &__item {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        // @include mediaSm {
+        //     width: 60px;
+        // }
+    }
+}

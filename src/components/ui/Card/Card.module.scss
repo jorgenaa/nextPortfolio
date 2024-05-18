@@ -1,0 +1,59 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+//@import "../../../styles/base";
+
+.card {
+    background-color: $blue;
+    &__imgContainer {
+        position: relative;
+        display: inline-block;
+    }
+	&__img {
+		width: 100%;
+		height: 100%;
+	}
+    &__title {
+		z-index: 10;
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: $lightGrey;
+        padding: 0 1rem;
+    }
+    &__btn {
+		display: block;
+		padding: 16px;
+		transition-duration: 1s;
+		transition-property: background-color;
+		text-decoration: none;
+		font-size: 20px;
+		&--disabled {
+			opacity: 0.5;
+			pointer-events: none;
+  			cursor: default;
+		}
+		&--pink {
+			background-color: $pink;
+			color: $lightGrey;
+		}
+
+		&--blue {
+			background-color: $blue;
+			color: $lightGrey;
+		}
+
+		&--hover {
+			&:hover {
+				background-color: $aquaMarine;
+				color: $blue;
+			
+			}
+		}
+
+	}
+	&__icon {
+		margin-right: 8px;
+	}
+}

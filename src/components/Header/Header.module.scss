@@ -1,0 +1,102 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+//@import "../../styles/base";
+
+.header {
+    max-height: 108px;
+    height: auto;
+    background-color: $blue;
+    display: flex;
+    position: sticky;
+    top: 0;  
+    z-index: 999; 
+    justify-content: space-between;
+    @include mediaMd {
+        position: relative;
+    //flex-direction: column;
+   
+    }
+    &__hamburger {
+        display: none;
+        background-color: $blue;
+        border: none;
+        @include mediaSm {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding-left: 1.5rem/* 24px */;
+            padding-right: 1.5rem/* 24px */;
+        }
+    }
+}
+
+// .sticky {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     z-index: 999;
+//    //background-color: $blueOpacity;
+//     //transition: top 0.5s ease-in-out;
+//  }
+
+.contact-info {
+    flex: 2;
+    padding: 0;
+    line-height: 40px;
+    margin: auto 20px auto 0;
+    color: $lightGrey;
+    text-align: right;
+    &__email {
+        padding-left: 5px;
+        
+    }
+    &__icon {
+        font-size: 20px;
+    }
+    @include mediaMd {
+        flex: 2;
+        margin: 0;
+        padding: 16px;
+        position: absolute;
+        right: 0;
+        top: 55px;
+    }
+    @include mediaSm {
+      
+        padding: 0px 16px;
+        position: absolute;
+        right: 0;
+        top: 50px;
+    }
+}
+
+// .hamburger {
+//     position: absolute;
+//     top: 0;
+//     right: 16px;
+//     display: none;
+//     margin: 5px;
+//     cursor: pointer;
+//     @include mediaMd {
+//         display: block;
+       
+//     }
+//     &__element {
+//         display: block;
+//         width: 35px;
+//         height: 3px;
+//         background-color: $lightGrey;
+//         margin: 7px 0;
+
+//     }
+// }
+
+// #hamburger-menu:checked ~ .navbar {
+//     display: flex;
+//     flex-direction: column;
+    
+// }
+// #hamburger-menu:checked ~ .nav-hamburger:before {
+//     content: "\f00d";
+ 
+//  }

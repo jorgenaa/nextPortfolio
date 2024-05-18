@@ -1,0 +1,151 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+//@import "../../styles/base";
+
+.nav{
+    flex: 6;
+    line-height: 40px;
+    margin: auto;
+    display: flex;
+    z-index: 6;
+  
+    @include mediaSm {
+        display: none;
+    }
+    &__link{
+        text-decoration: none;
+        padding: 0 20px;
+        cursor: pointer;
+	&--color {
+		color: $lightGrey;
+	}
+
+	&--hover {
+		&:hover {
+			color: $aquaMarine;
+        }
+	}
+	&--active {
+        color:  $aquaMarine;
+
+    }
+}
+&__divider {
+    border-right: 1px solid $lightGrey;
+    height: 40px;
+    @include mediaMd {
+        display: none;
+    }
+ }
+ &__contact-info {
+    flex: end;
+    margin-right: 20px;
+    margin: auto 20px auto 0;
+  
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $lightGrey;
+    }
+
+    &__email {
+        padding-left: 8px;
+        @include mediaMd {
+            font-size: 14px;
+        }
+    }
+    
+    @include mediaMd {
+        flex: 2;
+        margin: 0;
+        padding: 16px;
+        position: absolute;
+        right: 0;
+        top: 55px;
+       
+    }
+    @include mediaSm {
+      
+        padding: 0px 16px;
+        position: absolute;
+        right: 0;
+        top: 70px;
+    }
+}
+
+}
+
+
+
+ .navbar {
+    display: none;
+    background-color: $blueOpacity;
+    min-height: 100%;
+    padding-top: 1rem;
+    width: 150px;
+    position: absolute;
+    top: 0;
+   
+    z-index: 10;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+    @include mediaSm {
+        display: flex;
+        //align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &--close {
+        @include mediaSm {
+            right: -150px;
+        }
+    }
+    &--open {
+        @include mediaSm {
+            right: 0;
+        }
+    }
+    &--responsive {
+        @include mediaMin769px {
+            display:none;
+        }
+        @include mediaMd {
+           
+           
+        }
+        @include mediaSm {
+            display:block;
+        }
+    }
+    &__link {
+        justify-self: center;
+        cursor: pointer;
+        border-bottom: solid 1px $aquaMarine;
+        &:last-child {
+            border-bottom: none;
+        }
+            
+        @extend .nav__link;
+        padding: 10px;
+        &--color {
+            color: $lightGrey;
+        }
+    
+        &--hover {
+            &:hover {
+                color: $aquaMarine;
+               
+            }
+            &--active {
+                color:  $aquaMarine;
+            }
+        }
+    }
+    &__close {
+        color: $aquaMarine;
+        justify-self: start;
+    }
+ }

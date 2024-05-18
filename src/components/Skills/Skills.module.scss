@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+//@import "../../styles/base";
+
+.skills {
+	background-color: $aquaMarine;
+	&__heading {
+		color: $blue;
+		border-bottom: solid 1px $blue;
+		@include mediaMd {
+			font-size: 26px;
+		}
+
+		@include mediaSm {
+			font-size: 22px;
+		}
+	}
+
+	&__sub-heading {
+		padding-left: 1rem;
+		@include mediaMd {
+			text-align: center;
+			padding: 1rem 0;
+		}
+		@include mediaSm {
+			font-size: 20px;
+		}
+	}
+	
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-gap: 1rem;
+		padding: 1rem;
+		grid-auto-flow: row;
+		justify-items: center;
+
+		@include mediaMd {
+			grid-template-columns: repeat(6, 1fr);
+		}
+
+		@include mediaSm {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+	&__icon {
+		width: 100%;
+		height: 100%;
+	}
+}

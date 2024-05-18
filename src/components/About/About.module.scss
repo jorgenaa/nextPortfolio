@@ -1,0 +1,80 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+//@import "../../styles/base";
+
+
+.about {
+	width: 100%;
+	background: url('../../../public/assets/img/pattern-background-2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__heading {
+		background-color: $blue;
+		color: $lightGrey;
+		border-bottom: solid 1px $aquaMarine;
+		@include mediaMd {
+			font-size: 26px;
+		}
+
+		@include mediaSm {
+			font-size: 22px;
+		}
+	}
+
+	&__body {
+		display: flex;
+		width: 80%;
+		margin: 0 auto;
+
+		@include mediaMd {
+			width: 100%;
+		}
+
+		@include mediaSm {
+			flex-direction: column;
+		
+		}
+	}
+
+	&__item {
+		padding: 16px;
+		&:nth-child(1) {
+			@include mediaSm {
+			width: 60%;
+			margin: 8px auto;
+			
+		}
+	}
+		@include mediaSm {
+			text-align: center;
+			font-size: 14px;
+			padding: 0 16px;
+			
+		}
+	}
+	
+	&__item-heading {
+		color: $lightGrey;
+		letter-spacing: .5;
+		line-height: 1.5;
+		@include mediaSm {
+			text-align: center;
+			font-size: 18px;
+		}
+	}
+	&__text {
+		color: $lightGrey;
+		padding-bottom: 16px;
+		@include mediaMd {
+			font-size: 14px;
+		 }
+		
+	}
+	&__img {
+		border: 5px solid $aquaMarine;
+		border-radius: 50%;
+		width: 300px;
+		height: 300px;
+	}
+}
