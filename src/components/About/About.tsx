@@ -25,7 +25,9 @@ const About = () => {
 						I completed my professional degree in Front-end development at Noroff in 2021, and have since then worked on a fullstack project for my own business as a ecommerce website owner. 
 					</p>
 					<p className={s.about__text}>
-						I like to stay up to date and always learn something new while maintaining the focus on user experience and user interface. I design interactive products today using primarily Liquid, Remix, React.js, Next.js, Typescript, Redux, Git, Sass, Tailwind, BEM and Adobe Illuastrstor / Photoshop / XD / Figma and I am also open to learn other technologies as needed.
+						I like to stay up to date and always learn something new while maintaining the focus on user experience and user interface. 
+						I design interactive products today using primarily Liquid, Remix, React.js, Next.js, Typescript, Redux, Git, Sass, Tailwind,
+						BEM and Adobe Illustrator / Photoshop / XD / Figma and I am also open to learn other technologies as needed.
 						If you would like us to work together, feel free to contact me.
 					</p>
 					<p className={s.about__text}>
