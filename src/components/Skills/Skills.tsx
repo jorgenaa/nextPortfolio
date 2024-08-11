@@ -1,8 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import { icons } from "../../utils";
 import s from "./Skills.module.scss";
-import {Next, Tailwind} from "../ui/index";
-import GraphQL from "../ui/GraphQLLogo";
+import {Next, Tailwind, GraphQL} from "../ui/index";
 
 const Skills = () => {
 	return (
