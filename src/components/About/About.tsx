@@ -22,7 +22,7 @@ const About = () => {
 						I&#39;m a Front-End passionated developer from Norway with an eye for detail and have passion for technology.
 					</p>
 					<p className={s.about__text}>
-						I completed my professional degree in Front-end development at Noroff in 2021, and have since then worked on a fullstack project for my own business as a ecommerce website owner. 
+						I completed my professional degree in Front-end development at Noroff in 2021, and have since then worked on a fullstack project for my own business as an ecommerce website owner. 
 					</p>
 					<p className={s.about__text}>
 						I like to stay up to date and always learn something new while maintaining the focus on user experience and user interface. 
