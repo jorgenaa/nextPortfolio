@@ -13,6 +13,7 @@ import ReactIcon from '../public/assets/icons/react.png';
 import TypescriptIcon from '../public/assets/icons/typescript.png';
 import MongodbIcon from '../public/assets/icons/mongodb.png';
 import ReduxIcon from '../public/assets/icons/redux.png';
+import RemixIcon from '../public/assets/icons/remix.png';
 
 export const icons = [
 	HTML,
@@ -28,5 +29,6 @@ export const icons = [
 	ReactIcon,
     TypescriptIcon,
 	MongodbIcon,
-	ReduxIcon
+	ReduxIcon,
+	RemixIcon,
 ];
