@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import { icons } from "../../utils";
 import s from "./Skills.module.scss";
 import {Next, Tailwind} from "../ui/index";
+import GraphQL from "../ui/GraphQLLogo";
 
 const Skills = () => {
 	return (
@@ -21,6 +22,7 @@ const Skills = () => {
 				})}
 				<Next className="skills__icon"/>
 				<Tailwind className="skills__icon" />
+				<GraphQL className="skills__icon" fill="#e10098" />
 			</div>
 		</section>
 	);
