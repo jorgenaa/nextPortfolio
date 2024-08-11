@@ -19,7 +19,7 @@ const Skills = () => {
 						/>
 					);
 				})}
-				<Next />
+				<Next className="skills__icon"/>
 			</div>
 		</section>
 	);
