@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Metadata } from 'next';
-import ProfileImg from '../../../public/assets/img/IMG_4924.jpg';
+import ProfileImg from '../../../public/assets/img/IMG_profile_black.jpg';
 import s from './About.module.scss'
 
 export const metadata: Metadata = {
@@ -19,20 +19,17 @@ const About = () => {
 				<div className={s.about__item}>
 					<h3 className={s['about__item-heading']}>Hello I&#39;m Jørgen</h3>
 					<p className={s.about__text}>
-						I&#39;m a Front-End passionated developer from Norway with an eye for detail and technology.
+						I&#39;m a Front-End developer from Norway with an eye for detail and technology.
 					</p>
 					<p className={s.about__text}>
-						I completed my professional degree in Front-end development at Noroff in 2021, and have since then worked on a fullstack project for my own business as an ecommerce website owner. 
+						I completed my professional degree in Front-end development at Noroff in 2021, and have since then worked on a fullstack project for my own business as an ecommerce website owner.
 					</p>
 					<p className={s.about__text}>
-						I like to stay up to date and always learn something new while maintaining the focus on user experience and user interface. 
-						I design interactive products today using primarily Liquid, Remix, GraphQL, React.js, Next.js, Typescript, Redux, Git, Sass, Tailwind,
-						BEM and Adobe Illustrator / Photoshop / XD / Figma and I am also open to learn other technologies as needed.
-						Feel free to contact me.
+						I like to stay up to date and always learn something new while maintaining the focus on user experience and user interface. I currently design interactive products primarily using Liquid, Remix, GraphQL, React.js, Next.js, Typescript, Redux, Git, Sass, Tailwind, BEM and Adobe Illustrator / Photoshop / XD / Figma and I am also open to learning other technologies as needed. 
+						Please feel free to contact me.
 					</p>
 					<p className={s.about__text}>
-						To see some examples of what I have worked with lately, check out
-						some of my projects in the portfolio section.
+						To view some examples of what I have worked with lately, check out some of my projects in the portfolio section.
 					</p>
 				</div>
 			</div>
