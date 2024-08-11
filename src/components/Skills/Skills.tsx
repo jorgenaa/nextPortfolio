@@ -1,6 +1,7 @@
-import Image, { StaticImageData } from "next/image"
+import Image, { StaticImageData } from "next/image";
 import { icons } from "../../utils";
-import s from "./Skills.module.scss"
+import s from "./Skills.module.scss";
+import {Next} from "../ui/index";
 
 const Skills = () => {
 	return (
@@ -18,6 +19,7 @@ const Skills = () => {
 						/>
 					);
 				})}
+				<Next />
 			</div>
 		</section>
 	);
