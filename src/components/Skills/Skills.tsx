@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import { icons } from "../../utils";
 import s from "./Skills.module.scss";
-import {Next} from "../ui/index";
+import {Next, Tailwind} from "../ui/index";
 
 const Skills = () => {
 	return (
@@ -20,6 +20,7 @@ const Skills = () => {
 					);
 				})}
 				<Next className="skills__icon"/>
+				<Tailwind className="skills__icon" />
 			</div>
 		</section>
 	);
