@@ -1,1 +1,1 @@
-export { default } from "./GraphQl"
+export { default } from "./GraphQL"
