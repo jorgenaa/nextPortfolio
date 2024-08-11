@@ -24,11 +24,11 @@
 
 	&__body {
 		display: flex;
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
-
+		justify-items: center;
 		@include mediaMd {
-			width: 100%;
+			flex-direction: column;
 		}
 
 		@include mediaSm {
@@ -43,9 +43,13 @@
 			@include mediaSm {
 			width: 60%;
 			margin: 8px auto;
-			
 		}
 	}
+		&:nth-child(2) {
+			@include mediaMd {
+				padding-top: 0;
+			}
+		}
 		@include mediaSm {
 			text-align: center;
 			font-size: 14px;
