@@ -19,7 +19,7 @@ const Skills = () => {
 						/>
 					);
 				})}
-				<Next className={s.skills__icon}/>
+				<Next className={s.skills__icon} fill="#000000"/>
 				<Tailwind className={s.skills__icon} />
 				<GraphQL className={s.skills__icon} fill="#e10098" />
 			</div>
