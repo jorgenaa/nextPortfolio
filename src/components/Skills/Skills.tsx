@@ -19,9 +19,9 @@ const Skills = () => {
 						/>
 					);
 				})}
-				<Next/>
-				<Tailwind />
-				<GraphQL fill="#e10098" />
+				<Next className={s.skills__icon}/>
+				<Tailwind className={s.skills__icon} />
+				<GraphQL className={s.skills__icon} fill="#e10098" />
 			</div>
 		</section>
 	);
