@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { icons } from "../../utils";
 import s from "./Skills.module.scss";
 import {Next, Tailwind, GraphQL} from "../ui/index";
@@ -9,13 +9,15 @@ const Skills = () => {
 			<h2 className={s.skills__heading}>My Skills</h2>
             <h3 className={`${s['skills__sub-heading']}`}>Some of the common tools I use in my workflow</h3>
 			<div className={s.skills__row}>
-				{icons.map((icon: StaticImageData, index: number) => {
+				{icons.map((icon: string, index: number) => {
 					return (
 						<Image
 							key={index}
 							className={s.skills__icon}
 							src={icon}
 							alt="icon"
+							width={50}
+							height={50}
 						/>
 					);
 				})}

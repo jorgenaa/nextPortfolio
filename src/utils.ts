@@ -13,22 +13,22 @@ import ReactIcon from '../public/assets/icons/react.png';
 import TypescriptIcon from '../public/assets/icons/typescript.png';
 import MongodbIcon from '../public/assets/icons/mongodb.png';
 import ReduxIcon from '../public/assets/icons/redux.png';
-import RemixIcon from '../public/assets/icons/remix.png';
+import Wordpress from '../public/assets/icons/wordpress.png';
 
 export const icons = [
-	HTML,
-	CSS,
-	JS,
-	Bootstrap,
-	Sass,
-	Github,
-	Illustrator,
-	Photoshop,
-	XD,
-	Scrum,
-	ReactIcon,
-    TypescriptIcon,
-	MongodbIcon,
-	ReduxIcon,
-	RemixIcon,
+  '/assets/icons/HTML.png',
+  '/assets/icons/CSS.png',
+  '/assets/icons/JavaScript.png',
+  '/assets/icons/Bootstrap.png',
+  '/assets/icons/Sass.png',
+  '/assets/icons/GitHub.png',
+  '/assets/icons/Illustrator.png',
+  '/assets/icons/Photoshop.png',
+  '/assets/icons/XD.png',
+  '/assets/icons/Scrum.png',
+  '/assets/icons/react.png',
+  '/assets/icons/typescript.png',
+  '/assets/icons/mongodb.png',
+  '/assets/icons/redux.png',
+  '/assets/icons/wordpress.png',
 ];
