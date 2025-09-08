@@ -7,7 +7,7 @@ export const assets = [
 		title: 'Eccomerce website',
 		icon: 'assets/icons/GitHub.png',
 		img: CodeImg,
-		github: '',
+		github: 'https://github.com/jorgenaa/tilbehoret_react-router-demo',
 		website: 'https://tilbehoret.no/'
 	},
 	{	
