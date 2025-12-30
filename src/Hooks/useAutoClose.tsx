@@ -1,23 +1,27 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react';
 
-const useAutoClose = () => {
-    let domeNode: any = useRef<HTMLButtonElement | HTMLDivElement | null>(null); 
-    const useClickOutside: any = ((handler: any) => {
-        useEffect(() => {
-            let maybeHandler = (e: any) => {
-                if(!domeNode.current.contains(e.target)) {
-                    handler();
-                }
-            }
-            document.body.addEventListener('click', maybeHandler, true)
-        
-            return () => {
-                document.body.removeEventListener('click', maybeHandler, true)
-            }
-        });
-        return domeNode
-    })
-  return [useClickOutside]
+function useAutoClose() {
+  const domNode = useRef<HTMLDivElement | null>(null);
+
+  const useClickOutside = (handler: () => void) => {
+    useEffect(() => {
+      const maybeHandler = (e: MouseEvent) => {
+        // Sjekk at domNode.current faktisk finnes
+        if (domNode.current && !domNode.current.contains(e.target as Node)) {
+          handler();
+        }
+      };
+
+      document.addEventListener('click', maybeHandler, true);
+      return () => {
+        document.removeEventListener('click', maybeHandler, true);
+      };
+    }, [handler]);
+
+    return domNode;
+  };
+
+  return [useClickOutside] as const;
 }
 
-export default useAutoClose
+export default useAutoClose;
