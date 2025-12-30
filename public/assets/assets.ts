@@ -4,11 +4,18 @@ import CodeImg from './img/code_1024x768.jpg';
 
 export const assets = [
 	{
-		title: 'Eccomerce website',
+		title: 'E-Commerce Hydrogen/Oxygen',
 		icon: 'assets/icons/GitHub.png',
 		img: CodeImg,
-		github: 'https://github.com/jorgenaa/tilbehoret_react-router-demo',
+		github: 'https://github.com/jorgenaa/tilbehoret_react-router',
 		website: 'https://tilbehoret.no/'
+	},
+	{
+		title: 'E-Commerce Liquid',
+		icon: 'assets/icons/GitHub.png',
+		img: CodeImg,
+		github: 'https://github.com/jorgenaa/tilbehoret_dawn_7_0_0',
+		website: 'https://tilbehoret.myshopify.com/'
 	},
 	{	
 		title: 'Food ordering site',
@@ -31,12 +38,6 @@ export const assets = [
 		github: 'https://github.com/jorgenaa/JS2-CA',
 		website: '',
 	},
-	{
-		title: 'Covid App',
-		icon: '',
-		img: CodeImg,
-		github: 'https://github.com/jorgenaa/Covid-19-app',
-		website: 'https://jorgenaa.github.io/Covid-19-app/',
-	},
+	
 	
 ];
